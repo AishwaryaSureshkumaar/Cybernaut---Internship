@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    background-color: #f0f0f0;
+}
+
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.circle.top-left, 
+.circle.top-right, 
+.circle.bottom-left, 
+.circle.bottom-right, 
+.circle.center {
+    width: 120px;
+    height: 120px;
+    background-color: pink;
+}
+
+.circle.medium {
+    width: 80px;
+    height: 80px;
+    background-color: purple;
+}
+
+
+.circle.small {
+    width: 40px;
+    height: 40px;
+    background-color: silver;
+}
+
+.top-left {
+    top: 10px;
+    left: 10px;
+}
+
+.top-right {
+    top: 10px;
+    right: 10px;
+}
+
+.bottom-left {
+    bottom: 10px;
+    left: 10px;
+}
+
+.bottom-right {
+    bottom: 10px;
+    right: 10px;
+}
+
+.center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
