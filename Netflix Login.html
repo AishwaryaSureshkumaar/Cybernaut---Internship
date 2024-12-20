@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Create Account</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: url('https://t4.ftcdn.net/jpg/09/51/93/49/360_F_951934983_wN9KKRd1qsRy2Vqy89rMupCSyo5Xt8yQ.jpg') no-repeat center center/cover;
+            height: 100vh;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            z-index: 1;
+        }
+
+        .container {
+            position: relative;
+            z-index: 5; 
+            width: 400px;
+            background: rgba(0, 0, 0, 0.85);
+            margin: -50px auto; 
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        h1 {
+            color: #e50914;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -20px;
+        }
+
+        h1 img {
+            height: 120px;
+            margin-right: 10px;
+            z-index: 2; 
+            margin-bottom: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        input, select {
+            width: 90%;
+            padding: 12px;
+            background: #333;
+            color: white;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+        }
+
+        select[multiple] {
+            height: auto;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #e50914;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #f40612;
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        a {
+            color: #e50914;
+            text-decoration: none;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        /* Styling for left-aligned checkbox and label */
+        .terms-container {text-align: left;
+            margin-bottom: 15px;
+        }
+
+        .terms-container label {
+            margin: 0;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Netflix Logo -->
+    <div style="text-align: center; position: relative; z-index: 2; margin-top:-20px;">
+        <h1>
+            <img src="C:\Users\krish\OneDrive\Pictures\Saved Pictures\Netflix-logo-bg removed.png" alt="Netflix Logo">
+        </h1>
+    </div>
+
+    <!-- Signup Form -->
+    <div class="container">
+        <h2>Create Your Account</h2>
+
+        <form action="#" method="post">
+            <!-- Name Fields -->
+            <div class="form-group">
+                <input type="text" placeholder="First Name" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Last Name" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <input type="email" placeholder="Email Address" required>
+            </div>
+
+            <!-- Mobile Number -->
+            <div class="form-group">
+                <input type="tel" placeholder="Mobile Number" required>
+            </div>
+
+            <!-- Date of Birth -->
+            <div class="form-group">
+                <input type="date" required>
+            </div>
+
+            <!-- Preferred Genre -->
+            <div class="form-group">
+                <label for="genre">Preferred Genre</label>
+                <select id="genre" name="genre">
+                    <option value="" disabled selected>Select Genre</option>
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="drama">Drama</option>
+                    <option value="horror">Horror</option>
+                    <option value="romantic">Romantic</option>
+                    <option value="thriller">Thriller</option>
+                </select>
+            </div>
+
+           
+
+            <!-- Signup Button -->
+            <button type="submit" class="btn">Login</button>
+        </form>
+<br>
+        <div class="footer-text">
+            Don't have an account? <a href="#">Sign up</a>
+        </div>
+    </div>
+
+</body>
+</html>
